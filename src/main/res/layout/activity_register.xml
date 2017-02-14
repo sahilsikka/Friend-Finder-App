@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/buddybanner"
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+    tools:context="com.example.ishita.myprojectapplication.RegisterActivity">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstname"
+
+            android:hint="First Name"
+            android:maxEms="100"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/UserName"
+            android:layout_alignEnd="@+id/UserName" />
+
+        <EditText
+            android:layout_width="247dp"
+            android:hint="Second Name"
+            android:layout_height="wrap_content"
+            android:id="@+id/sname"
+            android:layout_below="@+id/firstname"
+            android:layout_centerHorizontal="true" />
+
+
+        <EditText
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:hint="UserName"
+            android:id="@+id/UserName"
+            android:layout_below="@+id/sname"
+            android:layout_alignLeft="@+id/sname"
+            android:layout_alignStart="@+id/sname" />
+
+
+        <EditText
+            android:layout_width="247dp"
+            android:password="true"
+            android:hint="Password"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/editPassword"
+            android:layout_below="@+id/UserName"
+            android:layout_alignLeft="@+id/UserName"
+            android:layout_alignStart="@+id/UserName" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"
+            android:ems="10"
+            android:id="@+id/email"
+            android:layout_below="@+id/editPassword"
+            android:layout_alignRight="@+id/editPassword"
+            android:layout_alignEnd="@+id/editPassword"
+            android:layout_alignLeft="@+id/editPassword"
+            android:layout_alignStart="@+id/editPassword" />
+
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="65dp"
+            android:text="Register"
+            android:onClick="register"
+            android:id="@+id/bRegister"
+            android:layout_below="@+id/email"
+            android:layout_centerHorizontal="true" />
+</RelativeLayout>
